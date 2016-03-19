@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+}
+#container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* MENU STYLES START HERE */
+/* styles for all menu items: */
+nav ul {
+  margin: 0;/* remove default margin and padding */
+  padding: 0;
+  list-style-type: none;/* remove the bullet points */
+}
+nav li {
+  display: inline-block;/* make the main menu items line up horizontally */
+  position: relative;/* give the dropdown postion a starting-point (positioning context) */
+  background: #ccc;
+  margin-right: -4px;/* close up the annoying spaces when li code is on separate lines */
+  border-right: 2px solid rgba(237,237,237,0.9);/* add your own divisions between menu items */
+}
+nav > li:last-child {
+  border: none;/* remove the border from the last main menu item only */
+}
+nav ul a:link,
+nav ul a:visited {
+  height: 2em;
+  display: inline-block;/* make a tags accept block styles */
+  line-height: 2em;/* vertically center each (single-line) menu item */
+  width: 10em;/* make menu items all the same width */
+  text-align: center;
+  color: #333;/* change the default blue/purple link colors */
+  text-decoration: none;/* remove the default link underline */
+}
+nav ul a:hover {
+  background: #aaa;
+}
+/* styles for the submenu only: */
+nav ul ul {
+  display: none;/* hide the dropdown */
+  position: absolute;/* set the position of the dropdown to sit under the main menu item */
+}
+nav ul li:hover ul {
+  display: block;/* show the dropdown on hover */
+}
+nav ul ul li {
+  display: block;/* make the dropdwon menu items stack up vertically */
+  background: rgba(200,200,200,0.85);/* make the dropdown slightly translucent */
+  border: none;/* remove the right border set under the main menu */
+  border-bottom: 2px solid rgba(237,237,237,0.85);/* add divisions between dropdown menu items */
+}
+nav ul ul li:first-child {
+  border-top: 2px solid rgba(237,237,237,0.85);/* add top border to first dropdown menu item only */
+}
+nav ul ul li:last-child {
+  border-bottom: none;/* remove the bottom border only from the last dropdown menu item */
+}
+/* MENU STYLES END HERE */
+
+main {
+  background: #bbb;
+  min-height: 500px;
+  padding: 1em 20px;
+}
