@@ -1,43 +1,47 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>drop-down-menu</title>
-    <link rel="stylesheet" href="./css/dropdown.css">
-  </head>
-  <body>
-    <div id="container">
+<html lang="en">
 
-      <header>
-        <nav>
-          <ul>
-            <li><a href="#">item one</a>
-              <ul><!-- first submenu starts here -->
-                <li><a href="#">subitem one</a></li>
-                <li><a href="#">subitem two</a></li>
-                <li><a href="#">subitem three</a></li>
-                <li><a href="#">subitem four</a></li>
-                <li><a href="#">subitem five</a></li>
-              </ul><!-- first submenu ends here -->
-            </li>
-            <li><a href="#">item two</a>
-              <ul><!-- second submenu ends here -->
-                <li><a href="#">subitem six</a></li>
-                <li><a href="#">subitem seven</a></li>
-                <li><a href="#">subitem eight</a></li>
-              </ul><!-- second submenu ends here -->
-            </li>
-            <li><a href="#">item three</a></li>
-            <li><a href="#">item four</a></li>
-          </ul>
-        </nav>
-      </header>
+<head>
+  <meta charset="utf-8">
+  <title>drop-down-menu</title>
+  <link rel="stylesheet" href="./css/dropdown.css">
+</head>
 
-      <main>
-        <p>This is the unstyled HTML:</p>
-        <p><img src="./images/dropdown-unstyled.png" alt="dropdown menu unstyled"></p>
-      </main>
+<body>
+  <div id="container">
 
-    </div><!-- end of container div -->
-  </body>
+    <header>
+      <nav>
+        <!-- uses nested lists for submenus -->
+        <ul>
+          <li><a href="#">some submenus</a>
+            <ul><!-- first submenu starts here -->
+              <li><a href="#">subitem one</a></li>
+              <li><a href="#">subitem two</a></li>
+              <li><a href="#">subitem three</a></li>
+              <li><a href="#">subitem four</a></li>
+              <li><a href="#">subitem five</a></li>
+            </ul><!-- first submenu ends here -->
+          </li>
+          <li><a href="#">more submenus</a>
+            <ul><!-- second submenu ends here -->
+              <li><a href="#">subitem six</a></li>
+              <li><a href="#">subitem seven</a></li>
+              <li><a href="#">subitem eight</a></li>
+            </ul><!-- second submenu ends here -->
+          </li>
+          <li><a href="#">just a link</a></li>
+          <li><a href="#">another link</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <p>This is the unstyled HTML:</p>
+      <p><img src="./images/dropdown-unstyled.png" alt="dropdown menu unstyled"></p>
+    </main>
+
+  </div><!-- end of container div -->
+
+</body>
 </html>

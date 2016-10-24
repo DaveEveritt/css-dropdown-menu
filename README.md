@@ -13,4 +13,4 @@ The two common issues are fixed:
 - spaces that appear between `li` tags when they’re on separate lines but are styled with `display: inline-block;`
 - borders you want between items but not where you *don’t* want them
 
-This is mainly for my students (who are getting used to HTML and CSS), but anyone can integrate it with an existing website.
+This is mainly for my students (who are learning to HTML and CSS), but anyone can integrate it with an existing website.
