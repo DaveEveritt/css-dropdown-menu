@@ -1,25 +1,27 @@
 body {
   margin: 0;
+  font-family: sans-serif;
 }
 #container {
-  /*width: 90%;*/
   margin: 0 auto;
+  max-width: 1420px;
 }
 
 /* -------- MENU STYLES START HERE -------- */
 
-/* styles for all menu items: */
+/* styles for all menu items (lists inside a nav element): */
 nav ul {
   margin: 0;/* removes default margin and padding */
   padding: 0;
   list-style-type: none;/* removes all default list bullet points */
+  text-align: center;
 }
 nav li {
   display: inline-block;/* makes the main menu items line up horizontally */
   position: relative;/* sets the positioning context for dropdowns */
   background: #ccc;
   margin-right: -4px;/* closes up the annoying spaces when li elements are on separate lines */
-  border-right: 2px solid rgba(237,237,237,0.9);/* add your own divisions between menu items */
+  border-right: 2px solid rgba(237,237,237,.9);/* add your own divisions between menu items */
 }
 nav li:last-child {
   border-right: none;/* removes the border from the last main menu item only */
@@ -34,27 +36,27 @@ nav ul a:visited {
   color: #333;/* changes the default blue/purple link colors */
   text-decoration: none;/* removes the default link underline */
 }
-nav ul a:hover {
+nav a:hover {
   background: #aaa;
 }
-/* styles for the submenu only: */
-nav ul ul {
+/* styles for the submenu only (lists inside lists): */
+ul ul {
   display: none;/* hides the dropdown */
   position: absolute;/* sets the position of the dropdown to sit under the main menu item */
 }
-nav ul li:hover ul {
+ul li:hover ul {
   display: block;/* shows the dropdown on hover */
 }
-nav ul ul li {
+ul ul li {
   display: block;/* makes the dropdwon menu items stack up vertically */
-  background: rgba(200,200,200,.85);/* makes the dropdown slightly translucent */
+  background: rgba(200,200,200,.9);/* makes the dropdown slightly translucent */
   border: none;/* removes the right border set under the main menu */
-  border-bottom: 2px solid rgba(237,237,237,.85);/* adds divisions between dropdown menu items */
+  border-bottom: 2px solid rgba(237,237,237,.9);/* adds divisions between dropdown menu items */
 }
-nav ul ul li:first-child {
-  border-top: 2px solid rgba(237,237,237,.85);/* adds top border to first dropdown menu item only */
+ul ul li:first-child {
+  border-top: 2px solid rgba(237,237,237,.9);/* adds top border to first dropdown menu item only */
 }
-nav ul ul li:last-child {
+ul ul li:last-child {
   border-bottom: none;/* removes the bottom border only from the last dropdown menu item */
 }
 
@@ -64,4 +66,8 @@ main {
   background: #bbb;
   min-height: 500px;
   padding: 1em 20px;
+}
+code {
+  font-size: 1.25em;
+  color: #090;
 }
