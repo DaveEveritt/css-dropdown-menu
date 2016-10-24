@@ -2,7 +2,7 @@
 
 ![css dropdown menu](./images/css-dropdown.gif)
 
-This is a pure CSS horizontal menu with translucent vertical drop-down submenus.
+This is a CSS-only horizontal menu with translucent vertical drop-down submenus.
 
 It has been designed with minimal HTML and as few CSS styling hooks as possible (no excessive markup or CSS classes).
 
