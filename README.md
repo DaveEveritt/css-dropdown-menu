@@ -1,4 +1,4 @@
-# Minimal pure CSS dropdown menu
+# Minimal CSS-only dropdown menu
 
 ![css dropdown menu](./images/css-dropdown.gif)
 
